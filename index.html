@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Peace Maker Hub v0.8</title>
+  <title>Peace Maker Hub</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
@@ -57,26 +57,27 @@
     .roleOwner{background:#6d2f2f;color:#ffb3a7}.roleOP{background:#5a2f6d;color:#e3b3ff}
     .otreeWrap{overflow:auto;padding:14px 0 30px}
     .otree{display:flex;justify-content:center;min-width:max-content;margin:0 auto;padding:0}
-    .otree ul{display:flex;justify-content:center;padding:28px 0 0;margin:0;position:relative;list-style:none}
-    .otree ul::before{content:'';position:absolute;top:0;left:50%;border-left:2px solid #3d4553;height:28px}
-    .otree li{display:flex;flex-direction:column;align-items:center;position:relative;padding:28px 14px 0;list-style:none}
-    .otree li::before,.otree li::after{content:'';position:absolute;top:0;right:50%;border-top:2px solid #3d4553;width:50%;height:28px}
+    .otree ul{display:flex;justify-content:center;padding:18px 0 0;margin:0;position:relative;list-style:none}
+    .otree ul::before{content:'';position:absolute;top:0;left:50%;border-left:2px solid #3d4553;height:18px}
+    .otree li{display:flex;flex-direction:column;align-items:center;position:relative;padding:18px 5px 0;list-style:none}
+    .otree li::before,.otree li::after{content:'';position:absolute;top:0;right:50%;border-top:2px solid #3d4553;width:50%;height:18px}
     .otree li::after{right:auto;left:50%;border-left:2px solid #3d4553}
     .otree li:only-child::before,.otree li:only-child::after{display:none}
     .otree li:first-child::before,.otree li:last-child::after{border-top:0}
-    .otree li:last-child::before{border-right:2px solid #3d4553;border-radius:0 12px 0 0}
-    .otree li:first-child::after{border-radius:12px 0 0 0}
+    .otree li:last-child::before{border-right:2px solid #3d4553;border-radius:0 10px 0 0}
+    .otree li:first-child::after{border-radius:10px 0 0 0}
     .otree>li{padding-top:0}
     .otree>li::before,.otree>li::after{display:none}
-    .onode{position:relative;background:var(--dark2);border:1px solid var(--darkLine);border-radius:20px;padding:18px 16px 14px;min-width:150px;max-width:200px;text-align:center;color:#f4f6f8;box-shadow:0 14px 30px rgba(0,0,0,.25);transition:.2s;cursor:pointer}
-    .onode:hover{transform:translateY(-3px);border-color:#697282}
-    .oavatar{width:56px;height:56px;border-radius:16px;margin:0 auto 10px;display:grid;place-items:center;font-size:24px;font-weight:900;color:#fff}
-    .onode b{display:block;font-size:16px}
+    .onode{position:relative;background:var(--dark2);border:1px solid var(--darkLine);border-radius:14px;padding:10px 8px 9px;min-width:104px;max-width:138px;text-align:center;color:#f4f6f8;box-shadow:0 10px 22px rgba(0,0,0,.22);transition:.2s;cursor:pointer}
+    .onode:hover{transform:translateY(-2px);border-color:#697282}
+    .oavatar{width:36px;height:36px;border-radius:11px;margin:0 auto 6px;display:grid;place-items:center;font-size:16px;font-weight:900;color:#fff}
+    .onode b{display:block;font-size:13px}
     .onode b:hover{text-decoration:underline}
-    .orole{display:inline-block;background:#1d222b;border:1px solid #3a4350;color:#c9d2dc;border-radius:9px;padding:4px 10px;font-size:12px;font-weight:900;margin-top:8px}
-    .oteam{display:inline-flex;align-items:center;gap:5px;margin-top:8px;border:1px solid #4f8f4f;background:#24402f;color:#9cff87;border-radius:10px;padding:4px 9px;font-size:12px;font-weight:900}
-    .ocount{position:absolute;top:-10px;right:-10px;background:#f5bd54;color:#2d2823;border:2px solid #1d222b;border-radius:999px;min-width:26px;height:26px;display:grid;place-items:center;font-weight:900;font-size:12px;z-index:2}
-    .odrill{display:block;margin-top:8px;font-size:11px;color:#8f9aa8;font-weight:800}
+    .orole{display:inline-block;background:#1d222b;border:1px solid #3a4350;color:#c9d2dc;border-radius:7px;padding:2px 7px;font-size:10px;font-weight:900;margin-top:5px}
+    .oteam{display:inline-flex;align-items:center;gap:3px;margin-top:5px;border:1px solid #4f8f4f;background:#24402f;color:#9cff87;border-radius:7px;padding:2px 6px;font-size:10px;font-weight:900;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+    .ocount{position:absolute;top:-8px;right:-8px;background:#f5bd54;color:#2d2823;border:2px solid #1d222b;border-radius:999px;min-width:21px;height:21px;display:grid;place-items:center;font-weight:900;font-size:10px;z-index:2}
+    .odrill{display:block;margin-top:5px;font-size:10px;color:#8f9aa8;font-weight:800}
+    .orgSelect{background:#29303b;color:#fff;border:1px solid var(--darkLine);border-radius:12px;padding:11px 13px;font-weight:800;outline:none;max-width:260px}
     .crumb{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:14px}
     .crumb button{background:#29303b;border:1px solid var(--darkLine);color:#dce3eb;border-radius:999px;padding:8px 14px;font-weight:900}
     .crumb button.cur{background:#c99a57;color:#2d2823;border-color:#c99a57}
@@ -126,7 +127,7 @@
 <div class="app" id="appRoot"><aside class="side"><div class="brand"><div class="logo">PM</div><div><h1>Peace Maker Hub</h1><p>Recruit · Grow · Lead</p></div></div><nav class="nav" id="nav"></nav><div class="status" id="statusBox"></div></aside><main class="main"><section id="dashboard" class="view active"></section><section id="org" class="view"></section><section id="members" class="view"></section><section id="survey" class="view"></section><section id="field" class="view"></section><section id="donus" class="view"></section><section id="firebase" class="view"></section><section id="admin" class="view"></section></main></div>
 <div class="modal" id="modal"><div class="modalCard"><button class="close" onclick="closeModal()">닫기</button><div id="modalBody"></div></div></div>
 <script>
-const PMH_VERSION='v0.8';
+const PMH_VERSION='v1.1';
 const SHEET_URL='https://docs.google.com/spreadsheets/';
 const EXEC_PWS={'대표자':'0691','관리자':'0001','어드민':'0691'};
 const FB_BUILTIN={apiKey:"AIzaSyCdaVN_04JCRUkDJiTNNtITAx4wjYa8hPw",authDomain:"peace-maker-hub.firebaseapp.com",projectId:"peace-maker-hub",storageBucket:"peace-maker-hub.firebasestorage.app",messagingSenderId:"535453139403",appId:"1:535453139403:web:a7588cdac58bfad59a764e"};
@@ -139,17 +140,20 @@ const SURVEY_QS={
 };
 const sampleMembers=[
  {id:'NM00001',name:'이예승',team:'Peace Maker',role:'Owner',leaderId:'',status:'활동중',donus:'',notes:'오너 · 전체 총괄',photo:'',week:['NA','NA','NA','NA','NA','NA','NA'],memos:[]},
+ {id:'NM00002',name:'김한별',team:'미정(수정해주세요)',role:'AOP',leaderId:'NM00001',status:'활동중',donus:'',notes:'팀장',photo:'',week:['NA','NA','NA','NA','NA','NA','NA'],memos:[]},
+ {id:'NM00003',name:'장재원',team:'Rise',role:'AOP',leaderId:'NM00001',status:'활동중',donus:'',notes:'팀장',photo:'',week:['NA','NA','NA','NA','NA','NA','NA'],memos:[]},
+ {id:'NM00004',name:'유영진',team:'Coram Deo',role:'AOP',leaderId:'NM00001',status:'활동중',donus:'',notes:'팀장',photo:'',week:['NA','NA','NA','NA','NA','NA','NA'],memos:[]},
  {id:'NM00178',name:'임재영',team:'Presence',role:'AOP',leaderId:'NM00001',status:'활동중',donus:'https://donus.org/peace/NM00178',notes:'전체 운영 리더',photo:'',week:[2,2,1,3,'NA',0,3],memos:[{date:'2026-07-08',type:'정기면담',mood:'좋음',summary:'조직도와 설문 시스템 구축 방향 논의.',next:'팀별 데이터 관리 기준 확정'}]},
- {id:'NM00021',name:'윤채영',team:'Young wave',role:'팀리더(TL)',leaderId:'NM00178',status:'활동중',donus:'https://donus.org/peace/NM00021',notes:'팀 빌딩 예시',photo:'',week:[1,1,'NA',2,0,1,'NA'],memos:[]},
- {id:'NM00022',name:'간승학',team:'Kangee',role:'리더(LR)',leaderId:'NM00178',status:'활동중',donus:'',notes:'예시 리더',photo:'',week:[1,'NA',0,2,1,1,2],memos:[]},
- {id:'NM00023',name:'고윤경',team:'Fuse',role:'리더(LR)',leaderId:'NM00178',status:'활동중',donus:'',notes:'예시 리더',photo:'',week:[2,2,2,'NA',1,0,1],memos:[]},
- {id:'NM00024',name:'박인선',team:'Lumo In',role:'리더(LR)',leaderId:'NM00178',status:'활동중',donus:'',notes:'예시 리더',photo:'',week:['NA',1,1,1,1,'NA',0],memos:[]},
- {id:'NM00031',name:'손예진',team:'Blin',role:'리더(LR)',leaderId:'NM00021',status:'활동중',donus:'',notes:'예시',photo:'',week:[0,1,1,'NA',2,1,1],memos:[]},
+ {id:'NM00021',name:'윤채영',team:'Young wave',role:'TL',leaderId:'NM00178',status:'활동중',donus:'https://donus.org/peace/NM00021',notes:'팀 빌딩 예시',photo:'',week:[1,1,'NA',2,0,1,'NA'],memos:[]},
+ {id:'NM00022',name:'간승학',team:'Kangee',role:'LR',leaderId:'NM00178',status:'활동중',donus:'',notes:'예시 리더',photo:'',week:[1,'NA',0,2,1,1,2],memos:[]},
+ {id:'NM00023',name:'고윤경',team:'Fuse',role:'LR',leaderId:'NM00178',status:'활동중',donus:'',notes:'예시 리더',photo:'',week:[2,2,2,'NA',1,0,1],memos:[]},
+ {id:'NM00024',name:'박인선',team:'Lumo In',role:'LR',leaderId:'NM00178',status:'활동중',donus:'',notes:'예시 리더',photo:'',week:['NA',1,1,1,1,'NA',0],memos:[]},
+ {id:'NM00031',name:'손예진',team:'Blin',role:'LR',leaderId:'NM00021',status:'활동중',donus:'',notes:'예시',photo:'',week:[0,1,1,'NA',2,1,1],memos:[]},
  {id:'NM00032',name:'민병준',team:'Young wave',role:'IC',leaderId:'NM00021',status:'교육중',donus:'',notes:'예시',photo:'',week:['NA',0,1,0,'NA',1,0],memos:[]},
  {id:'NM00033',name:'이윤성',team:'Kangee',role:'IC',leaderId:'NM00022',status:'활동중',donus:'',notes:'예시',photo:'',week:[1,1,1,1,1,'NA','NA'],memos:[]},
- {id:'NM00034',name:'권영웅',team:'Fuse',role:'리더(LR)',leaderId:'NM00023',status:'활동중',donus:'',notes:'예시',photo:'',week:[3,2,'NA',1,2,0,2],memos:[]},
- {id:'NM00035',name:'김하진',team:'Fuse',role:'리더(LR)',leaderId:'NM00023',status:'활동중',donus:'',notes:'예시',photo:'',week:[1,2,1,2,1,1,2],memos:[]},
- {id:'NM00036',name:'최이수',team:'Fuse',role:'리더(LR)',leaderId:'NM00023',status:'활동중',donus:'',notes:'예시',photo:'',week:[0,0,1,'NA',1,1,0],memos:[]},
+ {id:'NM00034',name:'권영웅',team:'Fuse',role:'LR',leaderId:'NM00023',status:'활동중',donus:'',notes:'예시',photo:'',week:[3,2,'NA',1,2,0,2],memos:[]},
+ {id:'NM00035',name:'김하진',team:'Fuse',role:'LR',leaderId:'NM00023',status:'활동중',donus:'',notes:'예시',photo:'',week:[1,2,1,2,1,1,2],memos:[]},
+ {id:'NM00036',name:'최이수',team:'Fuse',role:'LR',leaderId:'NM00023',status:'활동중',donus:'',notes:'예시',photo:'',week:[0,0,1,'NA',1,1,0],memos:[]},
  {id:'NM00037',name:'김수민',team:'Fuse',role:'IC',leaderId:'NM00023',status:'활동중',donus:'',notes:'예시',photo:'',week:[1,'NA',2,1,0,1,1],memos:[]}
 ];
 
@@ -165,13 +169,15 @@ function safeLoadState(){
   }catch(e){ console.warn('저장값을 읽지 못해 기본값으로 시작합니다.', e); return fallback; }
 }
 let state=safeLoadState();
-state.expanded=state.expanded||{};state.passwords=state.passwords||{};state.editors=state.editors||{};state.surveysLocal=state.surveysLocal||{};state.fieldWeeks=state.fieldWeeks||{};state.fieldFilter=state.fieldFilter||'ic';state.execNames=state.execNames||{};state.sheetUrl=state.sheetUrl||'';state.teamGroups=state.teamGroups||{};
+state.expanded=state.expanded||{};state.passwords=state.passwords||{};state.editors=state.editors||{};state.surveysLocal=state.surveysLocal||{};state.fieldWeeks=state.fieldWeeks||{};state.fieldFilter=state.fieldFilter||'ic';state.execNames=state.execNames||{};state.sheetUrl=state.sheetUrl||'';state.teamGroups=state.teamGroups||{};state.gasUrl=state.gasUrl||'';
 function execName(role){return state.execNames[role]||EXEC_NAMES[role]||role}
 const isSample=()=>state.members.length===0;
 const members=()=>isSample()?sampleMembers:state.members;
 const activeMembers=()=>members().filter(m=>!m.resigned);
 const resignedMembers=()=>members().filter(m=>m.resigned);
-const ROLES=[['Owner','오너 · 15명 이상 팀원을 이끄는 사람'],['OP','Owner Partner · 10명 이상 리더를 이끄는 사람'],['AOP','Assistant Owner Partner · 5명 이상 리더를 이끄는 사람'],['팀리더(TL)','2명 이상 리더를 이끄는 사람'],['리더(LR)','5일간 8개 세일즈 달성'],['IC','신입 활동가']];
+const ROLES=[['Owner','15명 이상 팀원을 이끄는 사람'],['OP','Owner Partner · 10명 이상 리더를 이끄는 사람'],['AOP','Assistant Owner Partner · 5명 이상 리더를 이끄는 사람'],['TL','Team Leader · 2명 이상 리더를 이끄는 사람'],['LR','Leader · 5일간 8개 세일즈 달성'],['IC','신입 활동가']];
+const ROLE_MIGRATE={'팀리더(TL)':'TL','리더(LR)':'LR','팀리더':'TL','리더':'LR','Team Leader':'TL','Leader':'LR'};
+(state.members||[]).forEach(m=>{if(ROLE_MIGRATE[m.role])m.role=ROLE_MIGRATE[m.role]});
 function ageOf(b){if(!b)return '';let d=new Date(b);if(isNaN(d))return '';let t=new Date();let a=t.getFullYear()-d.getFullYear();let mo=t.getMonth()-d.getMonth();if(mo<0||(mo===0&&t.getDate()<d.getDate()))a--;return a}
 const AV_COLORS=['#65c56e','#b07ce8','#e8896a','#5fa8e8','#c9a35a','#e86a9b','#58bfa8'];
 function avColor(name){let h=0;for(let ch of String(name))h=(h*31+ch.charCodeAt(0))>>>0;return AV_COLORS[h%AV_COLORS.length]}
@@ -185,7 +191,9 @@ function loadSession(){try{return JSON.parse(localStorage.getItem('pmhSession')|
 let session=loadSession();
 function saveSession(){session?localStorage.setItem('pmhSession',JSON.stringify(session)):localStorage.removeItem('pmhSession')}
 function isExec(){return !!session&&session.kind==='exec'}
-function canEdit(){return isExec()||(!!session&&session.kind==='member'&&!!state.editors[session.id])}
+function editorLevel(id){return state.editors[id]?'manager':''}
+function canEdit(){return isExec()||(!!session&&session.kind==='member'&&!!editorLevel(session.id))}
+function canManage(){return isExec()||(!!session&&session.kind==='member'&&editorLevel(session.id)==='manager')}
 function memberPw(id){return state.passwords[id]||'0000'}
 window.toggleLoginPanel=()=>{let ex=$('loginExec').classList.toggle('hidden');$('loginMem').classList.toggle('hidden',!ex);if(!ex)$('execPw').focus();else $('memId').focus()}
 window.execLogin=()=>{let role=$('execRole').value;if($('execPw').value!==EXEC_PWS[role])return alert('비밀번호가 올바르지 않습니다.');session={kind:'exec',role:role,name:execName(role)};saveSession();unlock();alert(execName(role)+' '+(EXEC_TITLES[role]||role)+' 안녕하세요 😊')}
@@ -193,7 +201,7 @@ window.memberLogin=()=>{let id=$('memId').value.trim().toUpperCase();if(!id)retu
 function unlock(){$('lock').classList.add('hidden');renderAll();show('dashboard')}
 window.logout=()=>{if(!confirm('로그아웃할까요?'))return;session=null;saveSession();location.reload()}
 window.changeMyPw=()=>{if(!session||session.kind!=='member')return alert('팀원 계정만 비밀번호를 변경할 수 있습니다.');let cur=prompt('현재 비밀번호를 입력하세요');if(cur===null)return;if(cur!==memberPw(session.id))return alert('현재 비밀번호가 올바르지 않습니다.');let nw=prompt('새 비밀번호 (4자리 이상)');if(nw===null)return;if(!nw||nw.length<4)return alert('4자리 이상 입력해주세요.');state.passwords[session.id]=nw;persist();alert('비밀번호가 변경되었습니다.')}
-window.resetPw=(id)=>{if(!isExec())return alert('운영진만 초기화할 수 있습니다.');if(confirm(id+' 비밀번호를 0000으로 초기화할까요?')){state.passwords[id]='0000';persist();alert('0000으로 초기화되었습니다.')}}
+window.resetPw=(id)=>{if(!canManage())return alert('운영진 또는 매니저만 초기화할 수 있습니다.');if(confirm(id+' 비밀번호를 0000으로 초기화할까요?')){state.passwords[id]='0000';persist();alert('0000으로 초기화되었습니다.')}}
 
 /* ---------- Firebase / 설문 동기화 ---------- */
 let db=null,surveyDocs={};
@@ -264,11 +272,11 @@ function navItemsFor(){
 }
 function navRender(){let active=currentView();$('nav').innerHTML=navItemsFor().map(([id,label])=>'<button data-view="'+id+'" onclick="show(\''+id+'\')" class="'+(id===active?'active':'')+'">'+label+'</button>').join('')}
 function leaderName(id){let m=members().find(x=>x.id===id);return m?m.name+' ('+m.id+')':'상위 없음'}
-function roleCounts(list){return ROLES.map(([r])=>{let short=r==='팀리더(TL)'?'TL':r==='리더(LR)'?'LR':r;return [short,list.filter(x=>x.role===r).length]})}
+function roleCounts(list){return ROLES.map(([r])=>[r,list.filter(x=>x.role===r).length])}
 function stats(){let m=activeMembers();return {total:m.length,active:m.filter(x=>x.status==='활동중').length,need:m.filter(x=>x.status==='면담필요').length,done:m.filter(x=>surveyDone(x)).length}}
 function searchBox(){return '<div class="search"><input id="globalSearch" placeholder="이름 / NM / 팀 / 리더 검색" onkeydown="if(event.key===\'Enter\') runSearch()"><button class="btn" onclick="runSearch()">검색</button></div>'}
 window.runSearch=()=>{let q=$('globalSearch')?.value?.trim().toLowerCase();if(!q)return;let m=activeMembers().find(x=>(x.name+x.id+x.team+x.role+leaderName(x.leaderId)).toLowerCase().includes(q));if(m){selectedId=m.id;showDetail(m.id)}else alert('검색 결과가 없습니다.')}
-function memberRow(m){return '<div class="personRow"><div><b>'+m.name+' '+surveyBadge(m)+'</b><span>'+m.id+' · '+m.team+' · '+m.status+'</span></div><button class="btn light" onclick="showDetail(\''+m.id+'\')">상세보기</button></div>'}
+function memberRow(m){return '<div class="personRow"><div><b>'+m.name+' <span class="tag" style="font-size:11px">'+m.id+'</span> <span class="roleDot '+roleClass(m.role)+'" style="margin:0;vertical-align:1px">'+m.role+'</span> '+surveyBadge(m)+'</b><span>'+m.team+' · '+m.status+(m.createdAt?' · 등록 '+m.createdAt:'')+'</span></div><button class="btn light" onclick="showDetail(\''+m.id+'\')">상세보기</button></div>'}
 window.copyText=async(t)=>{if(!t)return alert('복사할 링크가 없습니다.');await navigator.clipboard.writeText(t);alert('복사했습니다.')}
 
 /* ---------- Dashboard ---------- */
@@ -278,7 +286,7 @@ function dashboard(){let s=stats();let list=activeMembers();$('dashboard').inner
 function weekStats(w){let nums=(w||[]).filter(v=>v!=='NA').map(Number);let total=nums.reduce((a,b)=>a+b,0);return {field:nums.length,total,avg:nums.length?(total/nums.length).toFixed(2):'0.00'}}
 function descendantsOf(id,list=members()){let out=[];function walk(pid){list.filter(x=>x.leaderId===pid).forEach(c=>{out.push(c);walk(c.id)})}walk(id);return out}
 function directChildren(id,list){return list.filter(x=>x.leaderId===id)}
-function roleClass(role){if(role==='Owner')return 'roleOwner';if(role==='OP')return 'roleOP';if(role==='AOP')return 'roleAOP';if(role.includes('팀리더'))return 'roleTL';if(role.includes('리더'))return 'roleLR';return 'roleIC'}
+function roleClass(role){if(role==='Owner')return 'roleOwner';if(role==='OP')return 'roleOP';if(role==='AOP')return 'roleAOP';if(role==='TL'||role==='Team Leader'||String(role).includes('팀리더'))return 'roleTL';if(role==='LR'||role==='Leader'||String(role).includes('리더'))return 'roleLR';return 'roleIC'}
 function isManager(m){return !!m&&m.role!=='IC'}
 function branchTotal(id,list=members()){return descendantsOf(id,list).length}
 function rootMembers(list){return list.filter(m=>!m.leaderId||!list.find(x=>x.id===m.leaderId))}
@@ -289,7 +297,7 @@ function nodeCard(m,list,drillable){
   let parent=list.find(x=>x.id===m.leaderId);
   let showTeam=!parent||m.team!==parent.team;
   let title=m.name+' · '+m.role+'\n'+m.id+' · '+m.status+(count?'\n하위 '+count+'명':'');
-  return '<div class="onode" title="'+title+'" draggable="'+(isExec()&&!isSample())+'" ondragstart="dragStart(event,\''+m.id+'\')" ondrop="dropOn(event,\''+m.id+'\')" ondragover="event.preventDefault()" onclick="orgCardClick(\''+m.id+'\')">'+(count?'<span class="ocount">'+count+'</span>':'')+'<div class="oavatar" style="background:'+avColor(m.name)+'">'+m.name[0]+'</div><b onclick="event.stopPropagation();showDetail(\''+m.id+'\')">'+m.name+'</b><span class="orole '+roleClass(m.role)+'">'+m.role+'</span>'+(showTeam&&m.team?'<br><span class="oteam">🏷 '+m.team+'</span>':'')+(drillable?'<span class="odrill">▼ 클릭해서 팀 보기</span>':'')+'</div>'
+  return '<div class="onode" title="'+title+'" draggable="'+(canManage()&&!isSample())+'" ondragstart="dragStart(event,\''+m.id+'\')" ondrop="dropOn(event,\''+m.id+'\')" ondragover="event.preventDefault()" onclick="orgCardClick(\''+m.id+'\')">'+(count?'<span class="ocount">'+count+'</span>':'')+'<div class="oavatar" style="background:'+avColor(m.name)+'">'+m.name[0]+'</div><b onclick="event.stopPropagation();showDetail(\''+m.id+'\')">'+m.name+'</b><span class="orole '+roleClass(m.role)+'">'+m.role+'</span>'+(showTeam&&m.team?'<br><span class="oteam">🏷 '+m.team+'</span>':'')+(drillable?'<span class="odrill">▼ 클릭해서 팀 보기</span>':'')+'</div>'
 }
 function treeHTML(m,list){
   let kids=directChildren(m.id,list);
@@ -304,7 +312,7 @@ window.orgCardClick=(id)=>{if(orgFullMode){showDetail(id);return}let list=active
 window.focusNode=(id)=>{state.focusId=id;persist();show('org')}
 window.clearFocus=()=>{state.focusId='';persist();show('org')}
 window.dragStart=(e,id)=>{e.dataTransfer.setData('id',id)}
-window.dropOn=(e,leaderId)=>{e.preventDefault();if(!isExec())return alert('운영진만 조직도를 편집할 수 있습니다.');if(isSample())return alert('예시 데이터에서는 저장되지 않습니다. 실제 팀원을 등록한 뒤 사용해주세요.');let id=e.dataTransfer.getData('id');if(id===leaderId)return;if(descendantsOf(id,state.members).some(x=>x.id===leaderId))return alert('자기 하위 인원 아래로는 옮길 수 없습니다.');let m=state.members.find(x=>x.id===id);if(m){m.leaderId=leaderId;persist();show('org')}}
+window.dropOn=(e,leaderId)=>{e.preventDefault();if(!canManage())return alert('운영진 또는 매니저만 조직도를 편집할 수 있습니다.');if(isSample())return alert('예시 데이터에서는 저장되지 않습니다. 실제 팀원을 등록한 뒤 사용해주세요.');let id=e.dataTransfer.getData('id');if(id===leaderId)return;if(descendantsOf(id,state.members).some(x=>x.id===leaderId))return alert('자기 하위 인원 아래로는 옮길 수 없습니다.');let m=state.members.find(x=>x.id===id);if(m){m.leaderId=leaderId;persist();show('org')}}
 function resignLogCard(){
   if(!canEdit())return '';
   let list=resignedMembers().slice().sort((a,b)=>(b.resignedAt||'').localeCompare(a.resignedAt||''));
@@ -314,27 +322,24 @@ function org(){
   let list=activeMembers();
   let roots=rootMembers(list);
   let focus=state.focusId?list.find(x=>x.id===state.focusId):null;
-  let treeHtml='',modeText='',crumbHtml='';
+  let treeHtml='',viewList=list;
   if(!list.length){treeHtml='<div class="empty">조직도에 표시할 인원이 없습니다.</div>';orgFullMode=true}
-  else if(!focus&&list.length<=15){
-    orgFullMode=true;modeText='15명 이하 · 전체 조직 한눈에 보기';
+  else if(focus){
+    let branch=buildBranchList(focus,list);viewList=branch;
+    if(branch.length<=15){orgFullMode=true;treeHtml='<div class="otreeWrap"><ul class="otree">'+treeHTML(focus,branch)+'</ul></div>'}
+    else{orgFullMode=false;treeHtml='<div class="otreeWrap"><ul class="otree">'+drillHTML(focus,list)+'</ul></div>'}
+  }else if(list.length<=15){
+    orgFullMode=true;
     treeHtml='<div class="otreeWrap"><ul class="otree">'+roots.map(r=>treeHTML(r,list)).join('')+'</ul></div>';
   }else{
-    if(!focus)focus=roots[0];
-    let branch=buildBranchList(focus,list);
-    let chain=chainToRoot(focus,list);
-    crumbHtml='<div class="crumb">'+(state.focusId?'<button onclick="clearFocus()">⌂ 전체</button><i>›</i>':'')+chain.map((c,i)=>(i<chain.length-1?'<button onclick="focusNode(\''+c.id+'\')">'+c.name+'</button><i>›</i>':'<button class="cur">'+c.name+'</button>')).join('')+'</div>';
-    if(branch.length<=15){
-      orgFullMode=true;modeText=focus.name+' 팀 '+branch.length+'명 · 15명 이하 · 전체 펼침';
-      treeHtml='<div class="otreeWrap"><ul class="otree">'+treeHTML(focus,branch)+'</ul></div>';
-    }else{
-      orgFullMode=false;modeText=focus.name+' 팀 '+branch.length+'명 · 15명 초과 · 직속 팀원만 표시, 카드를 클릭하면 그 팀장의 직속 팀이 열립니다';
-      treeHtml='<div class="otreeWrap"><ul class="otree">'+drillHTML(focus,list)+'</ul></div>';
-    }
+    orgFullMode=false;let f=roots[0];
+    if(f){viewList=buildBranchList(f,list);treeHtml='<div class="otreeWrap"><ul class="otree">'+drillHTML(f,list)+'</ul></div>'}
   }
-  let chips=roleCounts(list).filter(([,n])=>n>0).map(([r,n])=>'<span class="chip"><b>'+n+'</b>'+r+'</span>').join('');
-  let mgrCnt=list.filter(m=>directChildren(m.id,list).length>0).length;
-  $('org').innerHTML='<div class="top"><div><div class="eyebrow">ORGANIZATION '+PMH_VERSION+'</div><h2 class="title">조직도</h2></div><div>'+(canEdit()?'<button class="btn" onclick="memberForm()">+ 신입 등록</button>':'<span class="viewerBadge">보기 전용</span>')+'</div></div><div class="orgWrap"><div class="orgTop"><div>'+chips+'<div class="orgLegend"><span>상위 '+roots.length+'</span><span>팀(하위 보유) '+mgrCnt+'</span><span>전체 '+list.length+'명</span><span>'+(isExec()?'드래그로 재배치 가능':canEdit()?'등록/면담 권한':'보기 전용')+'</span></div></div></div><div class="ruleHint"><b>'+modeText+'</b><br>이름을 누르면 프로필이 열려요. 직급 기준: '+ROLES.map(([r,d])=>'<b>'+r+'</b> '+d.split('·').pop().trim()).join(' · ')+'</div>'+crumbHtml+treeHtml+'</div>'+resignLogCard()+'<p class="note">'+(isExec()?'카드를 드래그해 다른 사람 카드 위에 놓으면 상위 리더가 바뀝니다. 퇴사 처리는 프로필에서 할 수 있습니다.':'조직도 편집은 운영진만 가능합니다.')+'</p>';
+  let chips=roleCounts(viewList).filter(([,n])=>n>0).map(([r,n])=>'<span class="chip"><b>'+n+'</b>'+r+'</span>').join('')+'<span class="chip"><b>'+viewList.length+'</b>총원</span>';
+  let managers=list.filter(m=>directChildren(m.id,list).length>0);
+  let filterSel='<select class="orgSelect" onchange="focusNode(this.value)"><option value="">👑 전체 조직 ('+list.length+'명)</option>'+managers.map(m=>'<option value="'+m.id+'" '+(state.focusId===m.id?'selected':'')+'>'+m.name+' 팀 ('+(branchTotal(m.id,list)+1)+'명)</option>').join('')+'</select>';
+  let title=focus?focus.name+' 팀':'Peace Maker 전체 조직도';
+  $('org').innerHTML='<div class="top"><div><div class="eyebrow">ORGANIZATION</div><h2 class="title">조직도</h2></div><div>'+(canEdit()?'<button class="btn" onclick="memberForm()">+ 신입 등록</button>':'<span class="viewerBadge">보기 전용</span>')+'</div></div><div class="orgWrap"><div class="orgTop"><div>'+chips+'</div><div>'+filterSel+(focus?' <button class="arrowBtn" onclick="focusNode(\'\')">← 전체</button>':'')+'</div></div><h2 class="teamTitle" style="margin:4px 0 10px">'+title+(orgFullMode?'':' · 직속 팀만 표시, 카드를 누르면 더 내려갑니다')+'</h2>'+treeHtml+'</div>'+resignLogCard()+'<p class="note">이름 클릭 = 프로필'+(isExec()?' · 카드를 드래그해 다른 카드 위에 놓으면 상위 리더가 바뀝니다 · 퇴사 처리는 프로필에서':'')+'</p>';
 }
 window.resignMember=(id)=>{
   if(!isExec())return alert('운영진만 퇴사 처리할 수 있습니다.');
@@ -343,7 +348,9 @@ window.resignMember=(id)=>{
   if(!confirm(m.name+' 님을 퇴사 처리할까요?\n하위 팀원은 '+(leaderName(m.leaderId))+' 아래로 자동 이동합니다.'))return;
   m.resigned=true;m.resignedAt=new Date().toISOString().slice(0,10);
   state.members.filter(c=>c.leaderId===id&&!c.resigned).forEach(c=>c.leaderId=m.leaderId);
-  delete state.editors[id];
+  delete state.editors[id];delete state.passwords[id];
+  Object.values(state.fieldWeeks||{}).forEach(w=>{delete w[id]});
+  Object.keys(state.surveysLocal||{}).forEach(k=>{if(k.indexOf(id+'_')===0)delete state.surveysLocal[k]});
   if(state.focusId===id)state.focusId='';
   persist();show('org');alert(m.name+' 님이 퇴사 처리되었습니다. 조직도 아래 퇴사자 로그에서 확인할 수 있습니다.')
 }
@@ -357,24 +364,69 @@ window.rehireMember=(id)=>{
 /* ---------- 신입관리 ---------- */
 function weekWidget(m){let st=weekStats(m.week);return '<div class="card"><div class="sectionHead"><h2>📅 최근 7일 필드 기록</h2><button class="btn ghost" onclick="show(\'field\')">📊 필드일정 보기</button></div><div class="week">'+DAYS.map((d,i)=>{let v=(m.week||[])[i]??'NA';let cls=v==='NA'?'na':Number(v)===0?'zero':'good';return '<div class="day"><b>'+d+'</b><div class="score '+cls+'">'+v+'</div></div>'}).join('')+'</div><div class="summary"><div class="mini">Field Day<b>'+st.field+'</b><small>NA 제외</small></div><div class="mini">Week Total<b>'+st.total+'</b><small>주간 합계</small></div><div class="mini">AVG<b>'+st.avg+'</b><small>필드일 기준</small></div></div></div>'}
 window.showDetail=(id)=>{selectedId=id;let m=members().find(x=>x.id===id);if(!m)return;show('members');
+  let backBtn='<button class="btn ghost" onclick="renderMemberList()" style="margin-bottom:16px">← 신입관리 목록으로</button>';
   let memoCard=canEdit()
     ?'<div class="card"><div class="sectionHead"><h2>면담 메모</h2><button class="btn light" onclick="memoForm(\''+m.id+'\')">+ 면담 기록</button></div>'+((m.memos||[]).length?m.memos.slice().reverse().map(memo=>'<div class="memoItem"><h4>'+memo.date+' · '+memo.type+' <span class="tag">'+(memo.mood||'체크')+'</span></h4><p>'+(memo.summary||'')+'</p><p class="note"><b>다음 액션:</b> '+(memo.next||'-')+'</p></div>').join(''):'<div class="empty">아직 면담 기록이 없습니다.</div>')+'<button class="btn ghost" onclick="openMemoHistory(\''+m.id+'\')">면담 전체 관리</button></div>'
     :'<div class="card"><h2>면담 메모</h2><div class="empty">면담 기록은 편집 권한이 있는 계정만 볼 수 있습니다.</div></div>';
-  $('members').innerHTML='<div class="detailHeader"><div class="profile"><div class="avatar">'+(m.photo?'<img src="'+m.photo+'">':m.name[0])+'</div><div><div class="eyebrow">MEMBER DETAIL</div><h2 class="title" style="margin-bottom:8px">'+m.name+'</h2><div class="note">'+m.id+' · '+m.team+' · '+m.role+' · 상위리더 '+leaderName(m.leaderId)+'</div><div class="note">📞 '+(m.phone||'연락처 미등록')+' · 🎂 '+(m.birth?m.birth+' (만 '+ageOf(m.birth)+'세)':'생년월일 미등록')+'</div>'+surveyBadge(m)+' '+(state.editors[m.id]?'<span class="adminOnlyBadge">편집권한 보유</span>':'')+(isSample()?' <span class="tag">예시 데이터</span>':'')+'</div></div><div>'+(canEdit()?'<button class="btn light" onclick="memberForm(\''+m.id+'\')">수정</button> ':'')+(isExec()?'<button class="btn ghost" onclick="resetPw(\''+m.id+'\')">🔑 비밀번호 초기화</button> '+(m.resigned?'<button class="btn light" onclick="rehireMember(\''+m.id+'\')">복직</button>':'<button class="btn danger" onclick="resignMember(\''+m.id+'\')">퇴사 처리</button>'):'')+'</div></div>'+weekWidget(m)+'<div class="two" style="margin-top:20px">'+memoCard+'<div class="card"><div class="sectionHead"><h2>설문</h2>'+surveyBadge(m)+'</div><p class="note">'+(surveyTypeFor(m)==='ic'?'IC':'Leader')+' 설문 · 응답이 도착하면 초록불이 켜집니다.</p><button class="btn" onclick="viewSurvey(\''+m.id+'\')">설문 응답 보기</button> '+(canEdit()?'<button class="btn light" onclick="copySurveyLink(\''+m.id+'\')">📩 설문 링크 복사</button>':'')+'<hr style="border:0;border-top:1px solid var(--line);margin:20px 0"><h2>Donus</h2><p style="word-break:break-all">'+(m.donus?'<a href="'+m.donus+'" target="_blank">'+m.donus+'</a>':'링크 없음')+'</p><button class="btn ghost" onclick="copyText(\''+(m.donus||'')+'\')">링크 복사</button></div></div>'}
+  $('members').innerHTML=backBtn+'<div class="detailHeader"><div class="profile"><div class="avatar">'+(m.photo?'<img src="'+m.photo+'">':m.name[0])+'</div><div><div class="eyebrow">MEMBER DETAIL</div><h2 class="title" style="margin-bottom:8px">'+m.name+'</h2><div class="note">'+m.id+' · '+m.team+' · '+m.role+' · 상위리더 '+leaderName(m.leaderId)+'</div><div class="note">📞 '+(m.phone||'연락처 미등록')+' · 🎂 '+(m.birth?m.birth+' (만 '+ageOf(m.birth)+'세)':'생년월일 미등록')+'</div>'+surveyBadge(m)+' '+(editorLevel(m.id)?'<span class="adminOnlyBadge">매니저 (편집)</span>':'')+(isSample()?' <span class="tag">예시 데이터</span>':'')+'</div></div><div>'+(canEdit()?'<button class="btn light" onclick="memberForm(\''+m.id+'\')">수정</button> ':'')+(isExec()?'<button class="btn ghost" onclick="resetPw(\''+m.id+'\')">🔑 비밀번호 초기화</button> '+(m.resigned?'<button class="btn light" onclick="rehireMember(\''+m.id+'\')">복직</button>':'<button class="btn danger" onclick="resignMember(\''+m.id+'\')">퇴사 처리</button>'):'')+'</div></div>'+weekWidget(m)+'<div class="two" style="margin-top:20px">'+memoCard+'<div class="card"><div class="sectionHead"><h2>설문</h2>'+surveyBadge(m)+'</div><p class="note">'+(surveyTypeFor(m)==='ic'?'IC':'Leader')+' 설문 · 응답이 도착하면 초록불이 켜집니다.</p><button class="btn" onclick="viewSurvey(\''+m.id+'\')">설문 응답 보기</button> '+(canEdit()?'<button class="btn light" onclick="copySurveyLink(\''+m.id+'\')">📩 설문 링크 복사</button>':'')+'<hr style="border:0;border-top:1px solid var(--line);margin:20px 0"><h2>Donus</h2><p style="word-break:break-all">'+(m.donus?'<a href="'+m.donus+'" target="_blank">'+m.donus+'</a>':'링크 없음')+'</p><button class="btn ghost" onclick="copyText(\''+(m.donus||'')+'\')">링크 복사</button></div></div>'}
 window.memberForm=(id='')=>{if(!canEdit())return alert('등록/수정 권한이 없습니다. 관리자에게 권한부여를 요청하세요.');let src=members().find(x=>x.id===id);let m=src||{id:'',name:'',team:'',role:'IC',leaderId:'',status:'활동중',donus:'',notes:'',photo:'',week:['NA','NA','NA','NA','NA','NA','NA'],memos:[]};let leaders=activeMembers().filter(isManager);openModal('<h2>'+(id?'팀원 수정':'신입 등록')+'</h2>'+(isSample()&&!id?'<p class="note">첫 데이터를 저장하면 예시 조직도/팀원은 자동으로 숨겨집니다.</p>':'')+'<p class="note">등록된 아이디 번호로 즉시 로그인 가능해집니다 (초기 비밀번호 0000).</p><div class="form"><input id="fName" placeholder="이름" value="'+m.name+'"><input id="fId" placeholder="NM번호 예: NM00178" value="'+m.id+'"><input id="fPhone" placeholder="연락처 예: 010-0000-0000" value="'+(m.phone||'')+'"><div style="display:grid;grid-template-columns:auto 1fr;gap:10px;align-items:center"><label class="note" style="padding-left:4px">생년월일</label><input id="fBirth" type="date" value="'+(m.birth||'')+'" style="padding:13px 14px;border:1px solid var(--line);border-radius:14px;background:#fff;outline:none"></div><input id="fTeam" placeholder="이끄는 팀 이름 (없으면 소속 팀)" value="'+m.team+'"><select id="fRole">'+ROLES.map(([r,d])=>'<option value="'+r+'" '+(m.role===r?'selected':'')+'>'+r+' — '+d+'</option>').join('')+'</select><select id="fLeader"><option value="">상위리더 없음</option>'+leaders.map(l=>'<option value="'+l.id+'" '+(m.leaderId===l.id?'selected':'')+'>'+l.id+' · '+l.name+' · '+l.team+'</option>').join('')+'</select><select id="fStatus"><option '+(m.status==='활동중'?'selected':'')+'>활동중</option><option '+(m.status==='교육중'?'selected':'')+'>교육중</option><option '+(m.status==='면담필요'?'selected':'')+'>면담필요</option></select><input id="fDonus" placeholder="Donus 링크" value="'+(m.donus||'')+'"><input id="fPhoto" placeholder="사진 URL 선택사항" value="'+(m.photo||'')+'"><textarea id="fNotes" placeholder="특이사항">'+(m.notes||'')+'</textarea><button class="btn" onclick="saveMember(\''+id+'\')">저장</button>'+(id&&!isSample()&&isExec()?'<button class="btn danger" onclick="deleteMember(\''+id+'\')">삭제</button>':'')+'</div>')}
-window.saveMember=(oldId)=>{let obj={name:$('fName').value.trim(),id:$('fId').value.trim()||('NM'+Date.now().toString().slice(-5)),phone:$('fPhone').value.trim(),birth:$('fBirth').value,team:$('fTeam').value.trim()||'Peace Maker',role:$('fRole').value,leaderId:$('fLeader').value,status:$('fStatus').value,donus:$('fDonus').value.trim(),photo:$('fPhoto').value.trim(),notes:$('fNotes').value,memos:[],week:['NA','NA','NA','NA','NA','NA','NA']};if(!obj.name)return alert('이름을 입력해주세요.');let list=isSample()?[]:[...state.members];let idx=list.findIndex(x=>x.id===oldId);if(idx>-1){obj.week=list[idx].week;obj.memos=list[idx].memos||[];list[idx]=obj}else list.push(obj);state.members=list;if(!state.passwords[obj.id])state.passwords[obj.id]='0000';selectedId=obj.id;closeModal();persist();showDetail(obj.id)}
+window.saveMember=(oldId)=>{let obj={name:$('fName').value.trim(),id:$('fId').value.trim()||('NM'+Date.now().toString().slice(-5)),phone:$('fPhone').value.trim(),birth:$('fBirth').value,team:$('fTeam').value.trim()||'Peace Maker',role:$('fRole').value,leaderId:$('fLeader').value,status:$('fStatus').value,donus:$('fDonus').value.trim(),photo:$('fPhoto').value.trim(),notes:$('fNotes').value,memos:[],week:['NA','NA','NA','NA','NA','NA','NA']};if(!obj.name)return alert('이름을 입력해주세요.');let list=isSample()?[]:[...state.members];let idx=list.findIndex(x=>x.id===oldId);if(idx>-1){obj.week=list[idx].week;obj.memos=list[idx].memos||[];obj.createdAt=list[idx].createdAt||'';obj.resigned=list[idx].resigned;obj.resignedAt=list[idx].resignedAt;list[idx]=obj}else{obj.createdAt=new Date().toISOString().slice(0,10);list.push(obj)}state.members=list;if(!state.passwords[obj.id])state.passwords[obj.id]='0000';selectedId=obj.id;closeModal();persist();showDetail(obj.id)}
 window.deleteMember=(id)=>{if(!isExec())return alert('운영진만 삭제할 수 있습니다.');if(confirm('삭제할까요?')){state.members=state.members.filter(x=>x.id!==id);delete state.passwords[id];delete state.editors[id];selectedId=state.members[0]?.id||sampleMembers[0].id;closeModal();persist();show('dashboard')}}
 window.memoForm=(id,idx='')=>{if(!canEdit())return alert('면담 기록 권한이 없습니다.');let m=members().find(x=>x.id===id);let memo=idx!==''?(m.memos||[])[idx]:{date:new Date().toISOString().slice(0,10),type:'정기면담',mood:'보통',summary:'',next:''};openModal('<h2>면담 기록</h2><p class="note">'+m.name+' · '+m.id+'</p><div class="form"><input id="memoDate" type="date" value="'+memo.date+'"><select id="memoType"><option '+(memo.type==='정기면담'?'selected':'')+'>정기면담</option><option '+(memo.type==='긴급면담'?'selected':'')+'>긴급면담</option><option '+(memo.type==='교육피드백'?'selected':'')+'>교육피드백</option><option '+(memo.type==='성과리뷰'?'selected':'')+'>성과리뷰</option></select><select id="memoMood"><option '+(memo.mood==='좋음'?'selected':'')+'>좋음</option><option '+(memo.mood==='보통'?'selected':'')+'>보통</option><option '+(memo.mood==='주의'?'selected':'')+'>주의</option><option '+(memo.mood==='면담필요'?'selected':'')+'>면담필요</option></select><textarea id="memoSummary" placeholder="면담 내용 / 특이사항">'+(memo.summary||'')+'</textarea><textarea id="memoNext" placeholder="다음 액션 / 약속한 목표">'+(memo.next||'')+'</textarea><button class="btn" onclick="saveMemoRecord(\''+id+'\',\''+idx+'\')">저장</button></div>')}
 window.saveMemoRecord=(id,idx)=>{let list=isSample()?JSON.parse(JSON.stringify(sampleMembers)):[...state.members];if(isSample())state.members=list;let m=state.members.find(x=>x.id===id);m.memos=m.memos||[];let memo={date:$('memoDate').value,type:$('memoType').value,mood:$('memoMood').value,summary:$('memoSummary').value,next:$('memoNext').value};if(idx!=='')m.memos[Number(idx)]=memo;else m.memos.push(memo);m.status=memo.mood==='면담필요'||memo.mood==='주의'?'면담필요':m.status;closeModal();persist();showDetail(id)}
 window.openMemoHistory=(id)=>{if(!canEdit())return;let m=members().find(x=>x.id===id);openModal('<div class="sectionHead"><h2>면담 전체 관리</h2><button class="btn light" onclick="memoForm(\''+id+'\')">+ 추가</button></div><p class="note">'+m.name+' · '+m.id+'</p>'+((m.memos||[]).length?m.memos.map((memo,i)=>'<div class="memoItem"><h4>'+memo.date+' · '+memo.type+' <span class="tag">'+memo.mood+'</span></h4><p>'+memo.summary+'</p><p class="note"><b>다음 액션:</b> '+(memo.next||'-')+'</p><button class="btn ghost" onclick="memoForm(\''+id+'\','+i+')">수정</button> <button class="btn danger" onclick="deleteMemo(\''+id+'\','+i+')">삭제</button></div>').join(''):'<div class="empty">면담 기록 없음</div>'))}
 window.deleteMemo=(id,idx)=>{if(!confirm('면담 기록을 삭제할까요?'))return;let list=isSample()?JSON.parse(JSON.stringify(sampleMembers)):[...state.members];if(isSample())state.members=list;let m=state.members.find(x=>x.id===id);m.memos.splice(idx,1);closeModal();persist();showDetail(id)}
-function renderMemberList(){$('members').innerHTML='<div class="top"><div><div class="eyebrow">MEMBERS</div><h2 class="title">신입관리</h2></div>'+(canEdit()?'<button class="btn" onclick="memberForm()">+ 신입 등록</button>':'<span class="viewerBadge">보기 전용</span>')+'</div>'+(isSample()?'<div class="card"><p class="note">현재는 예시 데이터입니다. 실제 신입을 등록하면 예시가 자동으로 숨겨집니다.</p></div>':'')+'<div class="card"><div class="list">'+activeMembers().map(memberRow).join('')+'</div></div>'}
+let memberViewMode='all';
+window.setMemberView=(v)=>{memberViewMode=v;renderMemberList()}
+function renderMemberList(){
+  let list=activeMembers().slice().sort((a,b)=>((a.role==='Owner'?'0':'1')+a.id).localeCompare((b.role==='Owner'?'0':'1')+b.id));
+  let weekCut=new Date();weekCut.setDate(weekCut.getDate()-7);let cut=weekCut.toISOString().slice(0,10);
+  let weekList=list.filter(m=>m.createdAt&&m.createdAt>=cut);
+  let shown=memberViewMode==='week'?weekList:list;
+  $('members').innerHTML='<div class="top"><div><div class="eyebrow">MEMBERS</div><h2 class="title">신입관리</h2></div>'+(canEdit()?'<button class="btn" onclick="memberForm()">+ 신입 등록</button>':'<span class="viewerBadge">보기 전용</span>')+'</div>'+(isSample()?'<div class="card" style="margin-bottom:16px"><p class="note">현재는 예시 데이터입니다. 실제 신입을 등록하면 예시가 자동으로 숨겨집니다.</p></div>':'')+'<div class="card"><div class="sectionHead"><div class="filterChips" style="margin:0"><button class="'+(memberViewMode==='all'?'on':'')+'" onclick="setMemberView(\'all\')">전체 명단 ('+list.length+')</button><button class="'+(memberViewMode==='week'?'on':'')+'" onclick="setMemberView(\'week\')">최근 일주일 등록 ('+weekList.length+')</button></div><span class="tag">오너 → ID 빠른순</span></div><div class="list">'+(shown.length?shown.map(memberRow).join(''):'<div class="empty">'+(memberViewMode==='week'?'최근 일주일 내 등록된 신입이 없습니다.':'등록된 인원이 없습니다.')+'</div>')+'</div></div>'
+}
 
 /* ---------- 설문센터 ---------- */
+let surveyQuery='',surveySub='';
+window.surveySearch=()=>{surveyQuery=($('surveyQ')?.value||'').trim();survey()}
+window.surveyClear=()=>{surveyQuery='';survey()}
+window.surveyPick=(t)=>{state.surveyTeam=t;surveyQuery='';surveySub='';persistQuiet();survey()}
+window.surveyPickSub=(t)=>{surveySub=t;survey()}
+function surveyRow(m){return '<div class="personRow"><div><b>'+m.name+' '+surveyBadge(m)+'</b><span>'+m.id+' · '+memberTeam(m)+' · '+m.role+' · '+(surveyTypeFor(m)==='ic'?'IC 설문':'Leader 설문')+'</span></div><div>'+(surveyDone(m)?'<button class="btn" onclick="viewSurvey(\''+m.id+'\')">응답 보기</button> ':'')+'<button class="btn light" onclick="copySurveyLink(\''+m.id+'\')">📩 문자용 링크 복사</button></div></div>'}
 function survey(){
   let list=activeMembers();let doneCnt=list.filter(m=>surveyDone(m)).length;
+  let allTeams=[...new Set(list.map(memberTeam))];
+  let roots=[...new Set(allTeams.map(rootTeam))];
+  if(!state.surveyTeam||!roots.includes(rootTeam(state.surveyTeam)))state.surveyTeam=roots[0]||'';
+  state.surveyTeam=rootTeam(state.surveyTeam);
+  let groupTeams=allTeams.filter(t=>rootTeam(t)===state.surveyTeam);
+  if(surveySub&&!groupTeams.includes(surveySub))surveySub='';
+  let shown,label;
+  if(surveyQuery){
+    let toks=surveyQuery.split(/[,\s]+/).filter(Boolean).map(t=>t.toLowerCase());
+    shown=list.filter(m=>toks.some(t=>(m.name+' '+m.id).toLowerCase().includes(t)));
+    label='검색 결과 · '+shown.length+'명';
+  }else if(surveySub){
+    shown=list.filter(m=>memberTeam(m)===surveySub);
+    label='📁 '+state.surveyTeam+' › '+surveySub+' · '+shown.length+'명';
+  }else{
+    shown=list.filter(m=>rootTeam(memberTeam(m))===state.surveyTeam);
+    label='📁 '+state.surveyTeam+(groupTeams.length>1?' (팀 '+groupTeams.length+'개)':'')+' · '+shown.length+'명';
+  }
+  let doneShown=shown.filter(m=>surveyDone(m)).length;
+  let q=surveyQuery.replace(/"/g,'&quot;');
+  let folderBtns=roots.map(t=>{
+    let inGroup=allTeams.filter(x=>rootTeam(x)===t);
+    let mems=list.filter(m=>rootTeam(memberTeam(m))===t);
+    let dn=mems.filter(m=>surveyDone(m)).length;
+    return '<button class="'+(!surveyQuery&&state.surveyTeam===t?'on':'')+'" onclick="surveyPick(\''+t.replace(/'/g,'')+'\')">📁 '+t+(inGroup.length>1?' <small style="background:none;padding:0">▸'+(inGroup.length-1)+'팀</small>':'')+'<small>'+dn+'/'+mems.length+'</small></button>'
+  }).join('');
+  let subChips='';
+  if(!surveyQuery&&groupTeams.length>1){
+    subChips='<div class="filterChips" style="margin:0 0 14px;flex-wrap:wrap"><button class="'+(surveySub===''?'on':'')+'" onclick="surveyPickSub(\'\')">전체</button>'+groupTeams.map(t=>'<button class="'+(surveySub===t?'on':'')+'" onclick="surveyPickSub(\''+t.replace(/'/g,'')+'\')">'+t+'</button>').join('')+'</div>';
+  }
   let fbNote=db?'<span class="adminOnlyBadge">Firebase 연결됨 · 실시간 수신</span>':'<span class="viewerBadge">Firebase 미설정 · 링크 수신 불가</span>'+(isExec()?' <button class="btn ghost" onclick="show(\'firebase\')">설정하러 가기</button>':'');
-  $('survey').innerHTML='<div class="top"><div><div class="eyebrow">SURVEY CENTER</div><h2 class="title">설문센터</h2></div><div>'+fbNote+'</div></div><div class="card"><div class="sectionHead"><h2>개별 설문 링크</h2><span class="tag">완료 '+doneCnt+' / '+list.length+'</span></div><p class="note">📩 버튼을 누르면 해당 팀원 전용 설문 링크가 복사됩니다. 문자에 붙여넣어 전송하세요.<br>상대가 설문을 제출하면 초록불 <span class="dot on"></span>이 켜지고, 응답은 여기와 신입 상세페이지에서 열람할 수 있습니다.</p><div class="list">'+list.map(m=>'<div class="personRow"><div><b>'+m.name+' '+surveyBadge(m)+'</b><span>'+m.id+' · '+m.team+' · '+m.role+' · '+(surveyTypeFor(m)==='ic'?'IC 설문':'Leader 설문')+'</span></div><div>'+(surveyDone(m)?'<button class="btn" onclick="viewSurvey(\''+m.id+'\')">응답 보기</button> ':'')+'<button class="btn light" onclick="copySurveyLink(\''+m.id+'\')">📩 문자용 링크 복사</button></div></div>').join('')+'</div></div>'
+  $('survey').innerHTML='<div class="top"><div><div class="eyebrow">SURVEY CENTER</div><h2 class="title">설문센터</h2></div><div class="search"><input id="surveyQ" placeholder="여러 명 검색: 임재영, 고윤경, 윤채영" value="'+q+'" onkeydown="if(event.key===\'Enter\')surveySearch()"><button class="btn" onclick="surveySearch()">검색</button>'+(surveyQuery?'<button class="btn ghost" onclick="surveyClear()">✕</button>':'')+'</div></div><p class="note" style="margin-top:0">'+fbNote+' <span class="tag">전체 완료 '+doneCnt+' / '+list.length+'</span></p><div class="donusLayout"><div class="card" style="padding:16px"><h2 style="margin:4px 6px 12px;font-size:17px">팀 폴더</h2><div class="folderList">'+folderBtns+'</div><p class="note" style="font-size:12px;margin:12px 6px 2px">폴더 숫자는 설문 완료/전체 인원입니다. 팀 묶음은 Donus의 폴더 구성을 따라갑니다.</p></div><div><div class="sectionHead"><h2>'+label+'</h2><span class="tag">완료 '+doneShown+' / '+shown.length+'</span></div>'+subChips+'<p class="note">📩 버튼으로 개인 전용 링크를 복사해 문자로 보내세요. 제출되면 초록불 <span class="dot on"></span>이 켜집니다.</p><div class="list">'+(shown.length?shown.map(surveyRow).join(''):'<div class="empty">'+(surveyQuery?'검색 결과가 없습니다.':'이 팀에 인원이 없습니다.')+'</div>')+'</div></div></div>'
 }
 
 /* ---------- 필드일정 ---------- */
@@ -390,15 +442,69 @@ function fieldCell(id,day){
   let handlers=canEdit()?' onclick="cycleField(\''+id+'\','+day+')" ondblclick="setFieldTime(\''+id+'\','+day+',event)" title="클릭: 출근↔휴무 · 더블클릭: 시간 입력"':'';
   return '<span class="fcell '+cls+'"'+handlers+'>'+label+'</span>'
 }
+let fieldTab='grid';
+window.setFieldTab=(t)=>{fieldTab=t;fieldView()}
+function fieldWeekCount(id){let slots=fieldSlots();return DAYS.filter((_,i)=>{let v=(slots[id]||{})[i]||'';return v&&v!=='OFF'}).length}
+function icRosterView(){
+  let ics=activeMembers().filter(m=>m.role==='IC').sort((a,b)=>a.id.localeCompare(b.id));
+  return '<div class="card"><div class="sectionHead"><h2>활동 IC 명단</h2><span class="tag">'+ics.length+'명 · ID 빠른순</span></div><div class="list">'+(ics.length?ics.map(m=>'<div class="personRow"><div><b>'+m.name+' <span class="tag" style="font-size:11px">'+m.id+'</span></b><span>'+memberTeam(m)+' · 상위 '+leaderName(m.leaderId)+' · '+m.status+(m.createdAt?' · 등록 '+m.createdAt:'')+'</span></div><div><span class="tag">이번주 필드 '+fieldWeekCount(m.id)+'일</span> <button class="btn light" onclick="showDetail(\''+m.id+'\')">상세</button></div></div>').join(''):'<div class="empty">활동 중인 IC가 없습니다.</div>')+'</div></div>'
+}
 function fieldView(){
+  if(fieldTab==='roster'){
+    $('field').innerHTML='<div class="top"><div><div class="eyebrow">FIELD SCHEDULE</div><h2 class="title">필드일정</h2></div></div><div class="filterChips"><button onclick="setFieldTab(\'grid\')">📅 주간 일정표</button><button class="on" onclick="setFieldTab(\'roster\')">👥 활동 IC 명단</button></div>'+icRosterView();
+    return;
+  }
   let roster=fieldRoster();let slots=fieldSlots();
   let dayCount=DAYS.map((_,i)=>roster.filter(m=>{let v=(slots[m.id]||{})[i]||'';return v&&v!=='OFF'}).length);
   let rows=roster.map(m=>{
     let cnt=DAYS.filter((_,i)=>{let v=(slots[m.id]||{})[i]||'';return v&&v!=='OFF'}).length;
     return '<tr><td class="nameCell"><b>'+m.name+' <span class="roleDot '+roleClass(m.role)+'" style="margin:0">'+m.role+'</span></b><span>'+m.id+' · '+m.team+' · '+m.status+'</span></td>'+DAYS.map((_,i)=>'<td>'+fieldCell(m.id,i)+'</td>').join('')+'<td><b style="color:'+(cnt?'var(--green)':'#b9ae9f')+'">'+cnt+'</b></td></tr>'
   }).join('');
-  $('field').innerHTML='<div class="top"><div><div class="eyebrow">FIELD SCHEDULE</div><h2 class="title">필드일정</h2></div><div class="weekNav"><button class="btn ghost" onclick="moveWeek(-1)">← 지난주</button><h3>'+fmtMD(state.fieldWeekSel)+' ~ '+fmtMD(state.fieldWeekSel,6)+'</h3><button class="btn ghost" onclick="moveWeek(1)">다음주 →</button><button class="btn light" onclick="thisWeek()">이번주</button>'+(state.sheetUrl?'<button class="btn ghost" onclick="window.open(state.sheetUrl,\'_blank\')">📊 시트 열기</button>':'')+'</div></div><div class="card"><div class="sectionHead"><h2>이번주 활동 명단</h2><span class="tag">'+roster.length+'명 · '+(canEdit()?'클릭해서 체크':'보기 전용')+'</span></div><div class="filterChips"><button class="'+(state.fieldFilter==='ic'?'on':'')+'" onclick="setFieldFilter(\'ic\')">IC 전체</button><button class="'+(state.fieldFilter==='leader'?'on':'')+'" onclick="setFieldFilter(\'leader\')">리더</button><button class="'+(state.fieldFilter==='all'?'on':'')+'" onclick="setFieldFilter(\'all\')">전체</button></div><div class="fieldWrap"><table class="fieldTable"><thead><tr><th>팀원</th>'+DAYS.map((d,i)=>'<th>'+d+'<br><small>'+fmtMD(state.fieldWeekSel,i)+'</small></th>').join('')+'<th>주간</th></tr></thead><tbody>'+(rows||'<tr><td colspan="9" style="padding:30px;color:var(--muted)">표시할 인원이 없습니다.</td></tr>')+'</tbody><tfoot><tr class="fieldSum"><td class="nameCell">일별 활동 인원</td>'+dayCount.map(c=>'<td>'+c+'</td>').join('')+'<td>'+dayCount.reduce((a,b)=>a+b,0)+'</td></tr></tfoot></table></div><p class="note" style="margin-top:14px">'+(canEdit()?'셀 클릭: <b>✓ 출근</b> → <b>휴</b> → 빈칸 순환 · 더블클릭: 시간 직접 입력 (예: 10~19) · 주 단위로 자동 저장됩니다.':'편집은 운영진 또는 권한을 부여받은 리더만 가능합니다.')+'</p></div>'
+  $('field').innerHTML='<div class="top"><div><div class="eyebrow">FIELD SCHEDULE</div><h2 class="title">필드일정</h2></div><div class="weekNav"><button class="btn ghost" onclick="moveWeek(-1)">←</button><select class="btn ghost" style="font-weight:900" onchange="pickWeek(this.value)">'+weekOptions().map(w=>'<option value="'+w+'" '+(w===state.fieldWeekSel?'selected':'')+'>'+weekLabel(w)+'</option>').join('')+'</select><button class="btn ghost" onclick="moveWeek(1)">→</button><button class="btn light" onclick="thisWeek()">이번주</button>'+(state.sheetUrl?'<button class="btn ghost" onclick="window.open(state.sheetUrl,\'_blank\')">📊 시트 열기</button>':'')+'</div></div><div class="card"><div class="sectionHead"><h2>이번주 활동 명단</h2><span class="tag">'+roster.length+'명 · '+(canEdit()?'클릭해서 체크':'보기 전용')+'</span></div><div class="filterChips"><button class="on" onclick="setFieldTab(\'grid\')">📅 주간 일정표</button><button onclick="setFieldTab(\'roster\')">👥 활동 IC 명단</button><span style="width:14px"></span><button class="'+(state.fieldFilter==='ic'?'on':'')+'" onclick="setFieldFilter(\'ic\')">IC 전체</button><button class="'+(state.fieldFilter==='leader'?'on':'')+'" onclick="setFieldFilter(\'leader\')">리더</button><button class="'+(state.fieldFilter==='all'?'on':'')+'" onclick="setFieldFilter(\'all\')">전체</button></div><div class="fieldWrap"><table class="fieldTable"><thead><tr><th>팀원</th>'+DAYS.map((d,i)=>'<th>'+d+'<br><small>'+fmtMD(state.fieldWeekSel,i)+'</small></th>').join('')+'<th>주간</th></tr></thead><tbody>'+(rows||'<tr><td colspan="9" style="padding:30px;color:var(--muted)">표시할 인원이 없습니다.</td></tr>')+'</tbody><tfoot><tr class="fieldSum"><td class="nameCell">일별 활동 인원</td>'+dayCount.map(c=>'<td>'+c+'</td>').join('')+'<td>'+dayCount.reduce((a,b)=>a+b,0)+'</td></tr></tfoot></table></div><p class="note" style="margin-top:14px">'+(canEdit()?'셀 클릭: <b>✓ 출근</b> → <b>휴</b> → 빈칸 순환 · 더블클릭: 시간 직접 입력 (예: 10~19) · 주 단위로 자동 저장됩니다.':'편집은 운영진 또는 권한을 부여받은 리더만 가능합니다.')+'</p></div>'
 }
+function sheetLabelOf(iso){
+  let m=new Date(iso);let sun=new Date(m);sun.setDate(sun.getDate()+6);
+  let yy=String(sun.getFullYear()).slice(2),labelMonth,nth;
+  if(sun.getMonth()!==m.getMonth()){labelMonth=sun.getMonth()+1;nth=1}
+  else{labelMonth=m.getMonth()+1;let fm=new Date(mondayOf(new Date(m.getFullYear(),m.getMonth(),1)));nth=Math.round((m-fm)/(7*86400000))+1}
+  return yy+'.'+labelMonth+'월 '+nth+'주';
+}
+function weekLabel(iso){return sheetLabelOf(iso)+' ('+fmtMD(iso)+'~'+fmtMD(iso,6)+')'}
+/* ---------- Google Sheet(Apps Script) 연동 ---------- */
+window.saveGasUrl=()=>{if(!isExec())return;state.gasUrl=$('gasUrlInput').value.trim();persist();show('firebase');alert(state.gasUrl?'앱스크립트가 연동되었습니다.':'연동이 해제되었습니다.')}
+function matchMemberByName(name){let n=String(name).replace(/\s+/g,'');return activeMembers().find(m=>m.name.replace(/\s+/g,'')===n)||null}
+window.pullSheetWeek=async()=>{
+  if(!canEdit())return alert('권한이 없습니다.');
+  if(!state.gasUrl)return alert('연동하기 탭에서 앱스크립트 URL을 먼저 설정해주세요.');
+  let label=sheetLabelOf(state.fieldWeekSel);
+  try{
+    let res=await fetch(state.gasUrl+'?action=week&label='+encodeURIComponent(label));
+    let data=await res.json();
+    if(data.error)return alert('시트를 찾지 못했습니다: '+label+'\n(시트 탭 이름이 "'+label+'" 형식인지 확인해주세요)');
+    let slots=fieldSlots();let matched=0,missed=[];
+    (data.rows||[]).forEach(row=>{
+      let m=matchMemberByName(row.name);
+      if(m){slots[m.id]=slots[m.id]||{};row.days.forEach((v,i)=>{slots[m.id][i]=v?'ON':''});matched++}
+      else missed.push(row.name);
+    });
+    persist();show('field');
+    alert('시트('+label+')에서 '+matched+'명 가져왔습니다.'+(missed.length?'\n미등록 이름: '+missed.join(', '):''));
+  }catch(e){alert('시트 연동 오류: '+e.message)}
+}
+window.pushSheetWeek=async()=>{
+  if(!canEdit())return alert('권한이 없습니다.');
+  if(!state.gasUrl)return alert('연동하기 탭에서 앱스크립트 URL을 먼저 설정해주세요.');
+  let label=sheetLabelOf(state.fieldWeekSel);let slots=fieldSlots();
+  let rows=activeMembers().map(m=>({name:m.name,days:DAYS.map((_,i)=>{let v=(slots[m.id]||{})[i]||'';return v&&v!=='OFF'?1:0})}));
+  let dates=DAYS.map((_,i)=>fmtMD(state.fieldWeekSel,i));
+  try{
+    let res=await fetch(state.gasUrl,{method:'POST',headers:{'Content-Type':'text/plain'},body:JSON.stringify({action:'setWeek',label:label,dates:dates,rows:rows})});
+    let data=await res.json();
+    if(data.ok)alert('시트('+label+')에 반영했습니다.');else alert('시트 반영 실패: '+(data.error||'알 수 없는 오류'));
+  }catch(e){alert('시트 연동 오류: '+e.message)}
+}
+function weekOptions(){let out=[];let d=new Date(mondayOf('2026-07-06'));let end=new Date('2026-12-31');while(d<=end){let iso=d.toISOString().slice(0,10);out.push(iso);d=new Date(d);d.setDate(d.getDate()+7)}return out}
+window.pickWeek=(iso)=>{state.fieldWeekSel=iso;persist();show('field')}
 window.setFieldFilter=(f)=>{state.fieldFilter=f;persist();show('field')}
 window.moveWeek=(dir)=>{let d=new Date(state.fieldWeekSel);d.setDate(d.getDate()+7*dir);state.fieldWeekSel=mondayOf(d);persist();show('field')}
 window.thisWeek=()=>{state.fieldWeekSel=mondayOf(new Date());persist();show('field')}
@@ -483,18 +589,19 @@ function exportData(){let data=JSON.stringify(state,null,2);openModal('<h2>JSON 
 function importData(){openModal('<h2>JSON 가져오기</h2><p class="note">내보낸 JSON을 붙여넣으면 현재 브라우저 저장 데이터를 교체합니다.</p><div class="form"><textarea id="importJson" style="min-height:220px" placeholder="여기에 JSON 붙여넣기"></textarea><button class="btn" onclick="applyImport()">가져오기</button></div>')}
 window.applyImport=()=>{try{let data=JSON.parse($('importJson').value);if(!data||!Array.isArray(data.members))throw new Error('members 배열 없음');state=Object.assign(safeLoadState(),data);persistQuiet();closeModal();renderAll();show('dashboard');alert('가져왔습니다.')}catch(e){alert('JSON 형식이 올바르지 않습니다.')}}
 window.saveExecNames=()=>{if(!isExec())return alert('운영진만 수정할 수 있습니다.');[['대표자','en0'],['관리자','en1'],['어드민','en2']].forEach(([r,eid])=>{let v=$(eid).value.trim();if(v)state.execNames[r]=v});persist();show('admin');alert('저장되었습니다.')}
-window.toggleEditor=(id)=>{if(!isExec())return alert('운영진만 권한을 변경할 수 있습니다.');state.editors[id]=!state.editors[id];if(!state.editors[id])delete state.editors[id];persist();show('admin')}
+window.setEditor=(id,lv)=>{if(!isExec())return alert('운영진만 권한을 변경할 수 있습니다.');if(lv)state.editors[id]=lv;else delete state.editors[id];persist();show('admin')}
 function admin(){
   let mgrs=activeMembers().filter(m=>isManager(m)&&m.role!=='Owner');
-  let permList=mgrs.length?mgrs.map(m=>'<div class="permRow"><div><b>'+m.name+'</b> <span class="note" style="font-size:12px">'+m.id+' · '+m.team+' · '+m.role+'</span></div><div>'+(state.editors[m.id]?'<span class="adminOnlyBadge">편집권한 ON</span> <button class="btn danger" onclick="toggleEditor(\''+m.id+'\')">해제</button>':'<span class="viewerBadge">열람만</span> <button class="btn light" onclick="toggleEditor(\''+m.id+'\')">권한부여</button>')+'</div></div>').join(''):'<div class="empty">리더가 없습니다.</div>';
-  $('admin').innerHTML='<div class="top"><div><div class="eyebrow">ADMIN SETTINGS</div><h2 class="title">관리자</h2></div><span class="adminOnlyBadge">'+(session?(session.kind==='exec'?session.role:session.name):'')+' 로그인</span></div><div class="adminGrid"><div class="card"><h2>편집 권한부여</h2><p class="note">권한을 부여받은 리더는 본인 계정으로 로그인해 <b>팀원 등록</b>과 <b>면담 기록</b>을 남길 수 있습니다. 미부여 시 조직도 단순 열람만 가능합니다.</p>'+permList+'</div><div class="card"><h2>운영진 이름 설정</h2><p class="note">로그인 인사말("○○○ 대표님 안녕하세요")과 상태 표시에 사용됩니다. 관리자만 수정할 수 있습니다.</p><div class="form"><div class="settingRow" style="margin:0"><b>대표자</b><input id="en0" style="max-width:200px;padding:10px 12px;border:1px solid var(--line);border-radius:12px" value="'+execName('대표자')+'"></div><div class="settingRow" style="margin:0"><b>관리자</b><input id="en1" style="max-width:200px;padding:10px 12px;border:1px solid var(--line);border-radius:12px" value="'+execName('관리자')+'"></div><div class="settingRow" style="margin:0"><b>어드민</b><input id="en2" style="max-width:200px;padding:10px 12px;border:1px solid var(--line);border-radius:12px" value="'+execName('어드민')+'"></div><button class="btn" onclick="saveExecNames()">이름 저장</button></div></div><div class="card"><h2>계정 관리</h2><div class="settingRow"><div><b>운영진 비밀번호</b><p class="note" style="margin:4px 0 0">대표자·어드민 0691 · 관리자 0001 (파일 내 고정)</p></div><span class="tag">고정</span></div><div class="settingRow"><div><b>팀원 초기 비밀번호</b><p class="note" style="margin:4px 0 0">신규 등록 시 0000 · 팀원이 직접 변경 가능 · 분실 시 상세페이지에서 초기화</p></div><span class="tag">0000</span></div><div class="settingRow"><div><b>로그아웃</b></div><button class="btn danger" onclick="logout()">로그아웃</button></div></div><div class="card"><h2>데이터 관리</h2><p class="note">GitHub Pages에서 서버 없이도 브라우저 저장과 JSON 백업으로 운영할 수 있습니다.</p><button class="btn light" onclick="exportData()">JSON 내보내기</button> <button class="btn light" onclick="importData()">JSON 가져오기</button><hr style="border:0;border-top:1px solid var(--line);margin:20px 0"><button class="btn danger" onclick="if(confirm(\'브라우저 저장 데이터를 초기화할까요?\')){localStorage.removeItem(\'pmh08\');localStorage.removeItem(\'pmh07\');localStorage.removeItem(\'pmh05\');location.reload();}">브라우저 저장 초기화</button></div><div class="card"><h2>'+PMH_VERSION+' 업데이트</h2><ul class="note"><li>🔒 대기화면 + 로그인 (운영진 0691 / 팀원 NM번호)</li><li>비밀번호 변경 · 관리자 초기화(0000)</li><li>조직도: 임재영 루트 단일 전체 트리</li><li>개별 설문 링크 + Firebase 실시간 수신 + 초록불</li><li>편집 권한부여 (리더별 등록/면담 허용)</li><li>필드일정 탭: 주간 활동 체킹 표</li></ul></div></div>'
+  let permList=mgrs.length?mgrs.map(m=>{let lv=editorLevel(m.id);let badge=lv?'<span class="adminOnlyBadge">매니저 (편집)</span>':'<span class="viewerBadge">열람만</span>';return '<div class="permRow"><div><b>'+m.name+'</b> '+badge+'<br><span class="note" style="font-size:12px">'+m.id+' · '+m.team+' · '+m.role+'</span></div><div>'+(lv?'<button class="btn danger" onclick="setEditor(\''+m.id+'\',\'\')">해제</button>':'<button class="btn light" onclick="setEditor(\''+m.id+'\',\'manager\')">매니저 권한부여</button>')+'</div></div>'}).join(''):'<div class="empty">리더가 없습니다.</div>';
+  let adminFull=isExec()&&session.role!=='대표자';
+  $('admin').innerHTML='<div class="top"><div><div class="eyebrow">ADMIN SETTINGS</div><h2 class="title">관리자</h2></div><span class="adminOnlyBadge">'+(session?(session.kind==='exec'?session.role:session.name):'')+' 로그인</span></div><div class="adminGrid"><div class="card"><h2>권한부여</h2><p class="note"><b>매니저 (편집)</b> 권한을 받은 리더는 본인 계정으로 팀원 등록, 면담 기록, 조직도 드래그 재배치, 비밀번호 초기화가 가능합니다. 미부여 시 열람만 가능합니다.</p>'+permList+'</div>'+(adminFull?'<div class="card"><h2>운영진 이름 설정</h2><p class="note">로그인 인사말("○○○ 대표님 안녕하세요")과 상태 표시에 사용됩니다. 관리자만 수정할 수 있습니다.</p><div class="form"><div class="settingRow" style="margin:0"><b>대표자</b><input id="en0" style="max-width:200px;padding:10px 12px;border:1px solid var(--line);border-radius:12px" value="'+execName('대표자')+'"></div><div class="settingRow" style="margin:0"><b>관리자</b><input id="en1" style="max-width:200px;padding:10px 12px;border:1px solid var(--line);border-radius:12px" value="'+execName('관리자')+'"></div><div class="settingRow" style="margin:0"><b>어드민</b><input id="en2" style="max-width:200px;padding:10px 12px;border:1px solid var(--line);border-radius:12px" value="'+execName('어드민')+'"></div><button class="btn" onclick="saveExecNames()">이름 저장</button></div></div><div class="card"><h2>계정 관리</h2><div class="settingRow"><div><b>운영진 비밀번호</b><p class="note" style="margin:4px 0 0">대표자·어드민 0691 · 관리자 0001 (파일 내 고정)</p></div><span class="tag">고정</span></div><div class="settingRow"><div><b>팀원 초기 비밀번호</b><p class="note" style="margin:4px 0 0">신규 등록 시 0000 · 팀원이 직접 변경 가능 · 분실 시 상세페이지에서 초기화</p></div><span class="tag">0000</span></div><div class="settingRow"><div><b>로그아웃</b></div><button class="btn danger" onclick="logout()">로그아웃</button></div></div><div class="card"><h2>데이터 관리</h2><p class="note">GitHub Pages에서 서버 없이도 브라우저 저장과 JSON 백업으로 운영할 수 있습니다.</p><button class="btn light" onclick="exportData()">JSON 내보내기</button> <button class="btn light" onclick="importData()">JSON 가져오기</button><hr style="border:0;border-top:1px solid var(--line);margin:20px 0"><button class="btn danger" onclick="if(confirm(\'브라우저 저장 데이터를 초기화할까요?\')){localStorage.removeItem(\'pmh08\');localStorage.removeItem(\'pmh07\');localStorage.removeItem(\'pmh05\');location.reload();}">브라우저 저장 초기화</button></div><div class="card"><h2>'+PMH_VERSION+' 업데이트</h2><ul class="note"><li>🔒 대기화면 + 로그인 (운영진 0691 / 팀원 NM번호)</li><li>비밀번호 변경 · 관리자 초기화(0000)</li><li>조직도: 임재영 루트 단일 전체 트리</li><li>개별 설문 링크 + Firebase 실시간 수신 + 초록불</li><li>편집 권한부여 (리더별 등록/면담 허용)</li><li>필드일정 탭: 주간 활동 체킹 표</li></ul></div>':'')+'</div>'+(adminFull?'':'<p class="note">그 외 관리 설정(운영진 이름 · 계정 · 데이터 관리)은 관리자 로그인에서만 표시됩니다.</p>')
 }
 
 /* ---------- 상태 / 렌더 ---------- */
 function statusRender(){
   let who=session?(session.kind==='exec'?execName(session.role)+' '+session.role+' (운영진)':session.name+' · '+session.id):'미로그인';
   let mode=isSample()?'예시 데이터':'브라우저 저장';
-  $('statusBox').innerHTML='<b>'+PMH_VERSION+' · '+mode+'</b>'+who+' · '+(isExec()?'전체 권한':canEdit()?'등록/면담 권한':'보기 전용')+'<br>'+(db?'🟢 Firebase 연결됨':'⚪ Firebase 미설정')+'<div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">'+(session&&session.kind==='member'?'<button class="btn light" style="padding:8px 12px;font-size:13px" onclick="changeMyPw()">비밀번호 변경</button>':'')+'<button class="btn ghost" style="padding:8px 12px;font-size:13px" onclick="logout()">로그아웃</button></div>'
+  $('statusBox').innerHTML='<b>'+PMH_VERSION+' · '+mode+'</b>'+who+' · '+(isExec()?'전체 권한':canManage()?'매니저 (편집) 권한':'보기 전용')+'<br>'+(db?'🟢 Firebase 연결됨':'⚪ Firebase 미설정')+'<div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">'+(session&&session.kind==='member'?'<button class="btn light" style="padding:8px 12px;font-size:13px" onclick="changeMyPw()">비밀번호 변경</button>':'')+'<button class="btn ghost" style="padding:8px 12px;font-size:13px" onclick="logout()">로그아웃</button></div>'
 }
 function renderAll(){if(SURVEY_MODE)return;statusRender();navRender();dashboard();org();survey();fieldView();donus();firebaseView();admin();if($('members').classList.contains('active')){let exists=members().find(m=>m.id===selectedId);exists?showDetail(selectedId):renderMemberList()}else{renderMemberList()}}
 
